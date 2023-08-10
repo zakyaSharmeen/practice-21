@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Abyssinica+SIL&family=Baloo+Bhaina+2&family=Bree+Serif&family=Dancing+Script&family=DynaPuff&family=Inter:wght@200&family=Kaushan+Script&family=Lemon&family=Maven+Pro&family=Merriweather+Sans&family=Mukta+Mahee:wght@300&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Public+Sans:wght@100&family=Quicksand:wght@300&family=Roboto&family=Rowdies:wght@300;400&family=Russo+One&family=Satisfy&family=Secular+One&family=Seymour+One&family=Staatliches&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+section nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 0;left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 12px 70px;
+}
+nav ul{
+    list-style: none;
+    margin-right: 100px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 5em;
+    font-size: 17px;
+    transition: 1s;
+}
+nav ul li a:after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li a:hover{
+    color: #fac031;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 100px;
+}
+.main .main-text h1{
+    font-size: 60px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+
+}
+.main .main-text h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: sans-serif, cursive;
+    line-height: 27px;
+    font-size: 70px;
+}
+.main-image img{
+    width: 650px;
+    position: relative;
+    left: 60px;
+}
+section p{
+    width: 600px;
+    text-align: justify;
+    position: relative;
+    left: 80px;
+    bottom: 150px;
+    line-height: 22px
+}
+
+.main-btn button{
+    background: #fac031;
+    position: relative;
+    left: 80px;
+    bottom: 110px;
+    width: 150px;
+    padding: 10px 22px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    color: white;
+}
+.main-btn button:hover{
+    background: white;
+    border: 2px solid #fac031;
+    color: #fac031;
+    padding: 10px 20px;
+}
